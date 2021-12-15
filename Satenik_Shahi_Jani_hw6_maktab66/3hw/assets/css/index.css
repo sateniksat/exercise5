@@ -1,0 +1,191 @@
+/* @font-face {
+    font-family: 'Raleway';
+    src: url(../font/Raleway/static/Raleway-Black.ttf),url(../font/Raleway/static/Raleway-BlackItalic.ttf)
+    ,url(../font/Raleway/static/Raleway-Bold.ttf),url(../font/Raleway/static/Raleway-BoldItalic.ttf)
+    ,url(../font/Raleway/static/Raleway-ExtraBold.ttf),url(../font/Raleway/static/Raleway-ExtraBoldItalic.ttf)
+    url(../font/Raleway/Raleway-VariableFont_wght.ttf)url(../font/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+} */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #f2f2f2;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+button {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.tag {
+  background-color: black;
+  color: whitesmoke;
+  padding: 0 0.5%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cantain1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 60%;
+}
+.cantain2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 28%;
+}
+.big,
+.my-name,
+.list,
+.card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.32) 0px 0px 15px 0px;
+  margin: 2%;
+  margin-top: 0;
+}
+.text-container {
+  padding: 3%;
+}
+.date {
+  color: gray;
+}
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+.comments {
+  direction: rtl;
+}
+.num-sq {
+  color: white;
+  background-color: black;
+  padding: 0 5%;
+  margin: 1%;
+}
+.num-rd {
+  color: white;
+  background-color: black;
+  padding: 1% 6%;
+  border-radius: 50%;
+  margin: 1%;
+}
+.read-me {
+  background-color: white;
+  display: block;
+  border: 1px solid #ccc;
+  width: 20%;
+}
+.name {
+  padding: 1% 5%;
+  background-color: #f2f2f2;
+}
+/* hr {
+  border: 0;
+} */
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 3%;
+}
+.card {
+  margin-bottom: 10%;
+}
+.large {
+  font-size: larger;
+}
+li a {
+  text-decoration: none;
+  display: flex;
+  color: black;
+}
+li a img {
+  flex-basis: 10%;
+  width: 12%;
+  margin-right: 2%;
+}
+.white {
+  padding: 2%;
+}
+.white p {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gray-tag {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 1%;
+  margin: 2% 1%;
+}
+.black {
+  background-color: black;
+  color: white;
+  padding: 1%;
+  margin: 2% 1%;
+}
+footer {
+  color: #fff;
+  background-color: #616161;
+  padding: 3% 1%;
+}
+footer a {
+  color: white;
+}
+.pre {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+.pre,
+.next {
+  background-color: black;
+  color: white;
+  padding: 1% 2%;
+  border-style: none;
+}
+.pre:hover {
+  background-color: rgb(216, 213, 213);
+  color: black;
+}
+.next:hover {
+  background-color: rgb(216, 213, 213);
+  color: black;
+}
+li:hover {
+  background-color: rgb(216, 213, 213);
+}
+.read-me:hover {
+  background-color: rgb(216, 213, 213);
+}
+@media (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+  .hide-list {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .comments {
+    display: none;
+  }
+}
